@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+python-multipart
+sqlalchemy
+chromadb
+google-generativeai
+pypdf
+python-dotenv
+pydantic
+sentence-transformers
+psycopg2-binary
+jinja2
+aiofiles
