@@ -7,7 +7,6 @@ google-generativeai
 pypdf
 python-dotenv
 pydantic
-sentence-transformers
 psycopg2-binary
 jinja2
 aiofiles
