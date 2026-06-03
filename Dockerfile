@@ -1,8 +1,8 @@
-FROM python:3.13-slim
+FROM python:3.11-slim
 
 WORKDIR /app
 
-# Install gcc, g++, AND postgresql development libraries
+# Install gcc, g++, and postgresql development libraries
 RUN apt-get update && apt-get install -y \
     gcc \
     g++ \
