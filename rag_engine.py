@@ -23,8 +23,9 @@ gemini_model = genai.GenerativeModel('gemini-2.5-flash')
 class RAGEngine:
     def __init__(self, persist_directory="./chroma_db"):
         self.chroma_client = chromadb.PersistentClient(path=persist_directory)
-        self.embedding_fn = embedding_functions.SentenceTransformerEmbeddingFunction(
-            model_name="all-MiniLM-L6-v2"
+        self.embedding_fn = embedding_functions.GoogleGenerativeAiEmbeddingFunction(
+            api_key=os.getenv("GEMINI_API_KEY"),
+            model_name="models/embedding-001"
         )
         self.collections = {}
         
