@@ -25,7 +25,7 @@ class RAGEngine:
         self.chroma_client = chromadb.PersistentClient(path=persist_directory)
         self.embedding_fn = embedding_functions.GoogleGenerativeAiEmbeddingFunction(
             api_key=os.getenv("GEMINI_API_KEY"),
-            model_name="gemini-embedding-001"
+            model_name="models/gemini-embedding-001"
         )
         self.collections = {}
         
